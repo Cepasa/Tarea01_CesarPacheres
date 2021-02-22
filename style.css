@@ -1,0 +1,96 @@
+body{
+    display: grid;
+    height: 100%;
+    min-height: 100vh;
+    background: darkturquoise;
+    color: purple;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 5% 15% 10% 60% 10%;
+    
+
+}
+header{
+    background-color: blue;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    text-align: center;
+    grid-column: 1/4;
+    border: solid black;
+    padding: 10px;
+
+}
+
+Header img{
+    height: 50px;
+    width: 50px;
+    clip-path: circle();
+}
+nav{
+    text-align: right;
+    grid-column: 1/4;
+    border: solid black;
+    padding: 10px;
+}
+main{
+    background-color:lightblue;
+    font-family:'Courier New', Courier, monospace;
+    color: black;
+    text-align: center;
+    border: solid black;
+    font-size: 16pt;
+    padding: 10px;
+
+}   
+main img{
+    height: 50px;
+    width: 50px;
+}
+
+aside{
+    grid-column: 2/4;
+    border: solid black;
+    padding:20px;
+}
+footer{
+    background-color:cornflowerblue;
+    color: black;
+    grid-column: 1/4;
+    border: solid black;
+    padding-left: 10px;
+}
+.WName{
+    font-family: Arial, Helvetica, sans-serif;
+    color:rgb(87, 44, 1);
+    text-align: left;
+    font-size: 50%;
+}
+
+.Buscador{
+    text-align: right;
+}
+
+#Buscar img{
+    width: 30px;
+    height: 30px;
+}
+
+.Titulo figure{
+    text-align: right;
+}
+
+
+.Navegador li{
+    background-color: white;
+    margin: 15px;
+    border: right 20px black;
+}
+address{
+    margin-top: 1em;
+    padding-top: 1em;
+    border-top: thin dotted;
+}
+
+textarea{
+    resize: none;
+}

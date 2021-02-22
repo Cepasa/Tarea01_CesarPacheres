@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarea01 HTML - César Pacheres Salinas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="WName">
+        <h1>Windows Name</h1>
+    </div>   
+
+<header>
+            <h1>Sistema Integrado de Gestión</h1>
+            <img src="img/cepasa.JPG" type="image/jpg">
+            <figcaption>Usuario1</figcaption>
+</header>  
+
+<nav>
+    <form>
+    <div class="buscador"></div>
+    <label for="texto_buscar" >Buscar en la Web </label> 
+    <input type="search" id="texto_buscar" placeholder="Buscador">
+    <button id="Buscar">
+        <img src="img/lupa.png">
+        <figcaption>Buscar</figcaption>
+    </button>
+    <br>
+</nav>
+
+<main>
+    <a>Menú</a>
+    <section>
+            <article>
+                <p>
+                    <button id="Agregar">
+                        <img src="img/Agregar.png">
+                        <figcaption>Agregar Producto</figcaption>
+                        
+                    </button>
+                </p>
+            </article>
+    </section>
+    <section>
+            <article>
+                <p>
+                    <button id="Agregar">
+                        <img src="img/Categorias.png">
+                        <figcaption>Administrar Categoria</figcaption>
+                        
+                    </button>
+                </p>                
+            </article>
+    </section>
+    <section>
+            <article>
+                <p>
+                    <button id="Agregar">
+                        <img src="img/Existencias.png">
+                        <figcaption>Existencias</figcaption>
+                        
+                    </button>
+                    
+                </p>                   
+            </article>
+    </section>
+    <section>
+            <article>
+                <p>
+                    <button id="Agregar">
+                        <img src="img/Pagos.png">
+                        <figcaption>Administrar Pagos</figcaption>
+                        
+                    </button>
+                    
+                </p>                   
+            </article>
+    </section>
+
+</main>
+        <aside>
+            <fieldset>
+                <legend>Agregar Producto</legend>
+                <form action="producto" method="POST">
+                    <br>
+                        <label for="Codigo">Código*   </label>
+                        <input type="tel" id="Codigo"  required pattern="[0-9]{6}"
+                        title="Sólo números. 6 dígitos" />
+                        <input type="submit" value="Validar">
+            
+                        <br>
+                        <label for="Nombre">Nombre* </label>
+                        <input type="text" name="Nombre" placeholder="Sólo letras y números" maxlength="100" required pattern="[A-Za-z0-9]+"
+                        title="Letras y números. Tamaño Máximo 100 caracteres"/>
+                        <br>
+            
+                        <label for="Abreviatura">Abreviatura </label>
+                        <input type="text" name="Abreviatura" placeholder="Sólo letras" maxlength="10" pattern="[A-Za-z\s]{2,30}"
+                        title="Sólo Letras. Tamaño Máximo 10 caracteres"/>
+                        <br>
+            
+                        <label for="Categoria">Categoria*  </label>
+                        <select name="Categoria">
+                            <option value="1">Panes Especiales</option> 
+                            <option value="2">Lácteos</option> 
+                            <option value="3">Pasteles</option>
+                            <option value="4">Abarrotes</option> 
+                            <option value="5">Bebidas</option> 
+                        </select>
+                        <br>
+                        <label for="RUC">RUC Proveedor* </label>
+                        <input type="tel" name="RUC" placeholder="Sólo números"  required pattern="[0-9]{11}"
+                        title="RUC sólo Números. Tamaño Maximo y minimo de 11 caracteres"/>
+                        
+                        <br>
+                        <label for="Precio">Precio*   </label>
+                        <input type="number" placeholder="0.00" min="0" step="1.00" name="numero" />
+            
+                        <br>
+                        <label for="color">Color de etiqueta   </label>
+                        <input name="color" type="color" />
+            
+                        <br>
+                        <label for="fecha">Fecha*   </label>
+                    <input type="date" id="fecha">
+                    <br>
+                        <br>
+                        <label for="Estado">Estado*   </label>
+                    
+                            <input name="estado" type="radio" />
+                            <label for="Activo">Activo   </label>
+                            <input name="estado" type="radio" />
+                            <label for="suspendido">Suspendido  </label>
+                            <input name="estado" type="radio" />
+                            <label for="Baja">De baja  </label>
+                            <br>
+                            <br>
+                            <label for="afecto">Afecto a impuesto*   </label>
+                        <input type="checkbox" name="afecto">
+                        <br>
+                        
+                        <label for="foto">Foto*   </label>
+                        <input type="file" name="foto" accept="image/jpg;image/bmp;image/png ">
+                            <br>
+                            
+                        <label for="Descripcion">Descripción   </label>
+                        <textarea id="Descripcion" 
+                        title="Sólo números. 6 dígitos"></textarea>
+                        <br>
+                        <br>
+                        <button type="submit" value="Grabar">Grabar</button>
+                        <button type="reset" value="Limpiar">Limpiar</button>
+            
+                </form>
+                </fieldset>
+        </aside>
+
+
+<footer>
+
+    <a href="Enlace1.html" >¿Qué hacemos?</a>
+    <a href="Enlace2.html" >¿Enlaces Principales?</a>
+    <a href="Enlace3.html" >¿Contáctanos?</a>
+
+</footer>
+
+</body>
+</html>
